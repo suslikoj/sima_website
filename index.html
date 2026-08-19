@@ -13,9 +13,9 @@
 <body>
 
 <header class="hero" id="top">
-  <div class="hero__blob hero__blob--mustard" aria-hidden="true"></div>
-  <div class="hero__blob hero__blob--blue" aria-hidden="true"></div>
-  <div class="hero__blob hero__blob--pink" aria-hidden="true"></div>
+  <img class="hero__flower hero__flower--yellow" src="images/flowers/yellow.png" alt="" aria-hidden="true">
+  <img class="hero__flower hero__flower--blue" src="images/flowers/blue.png" alt="" aria-hidden="true">
+  <img class="hero__flower hero__flower--pink" src="images/flowers/pink.png" alt="" aria-hidden="true">
 
   <div class="hero__inner">
     <div class="hero__text">
@@ -42,28 +42,28 @@
 <main>
 
   <section id="sluzby" class="section services">
-    <div class="section__head services__head">
-      <h2 class="section-title">Moje<br>služby</h2>
-
-      <div class="services__intro">
-        <p class="services__intro-tagline"><span class="accent">Z toho, co děláte,</span> najdu obsah, který má co říct.</p>
-        <p>Vytáhnu témata a myšlenky, které stojí za to ukázat. Může to být příběh, člověk, zajímavý detail, produkt, atmosféra, proces, myšlenka, humor nebo něco úplně obyčejného, co jen potřebuje správně uchopit.</p>
-        <p>Pak už pracuju já. Vymyslím koncept, připravím texty a naplánuju obsah. Společně doladíme detaily a podle potřeby se postarám i o natáčení, střih a zveřejnění.</p>
-
-        <p class="services__intro-tagline"><span class="accent">Zachytím okamžik.</span></p>
-        <p>Tak, aby ho prožil i ten, kdo u něj nebyl. Akce, sport, kultura, otevření nového místa nebo třeba křest knihy. Zachytím to podstatné a vytvořím krátké video, které předá atmosféru i těm, kteří u toho nebyli.</p>
-      </div>
-    </div>
-
     <div class="services__wrap">
-      <ul class="pill-grid">
-        <li class="pill pill--fill-blue">PPC reklamy</li>
-        <li class="pill pill--outline-navy">Správa sociálních sítí</li>
-        <li class="pill pill--fill-mustard">Kreativní koncepty</li>
-      </ul>
+      <div class="services__content">
+        <h2 class="section-title">Moje<br>služby</h2>
+
+        <div class="services__intro">
+          <p class="services__intro-tagline"><span class="accent">Z toho, co děláte,</span> najdu obsah, který má co říct.</p>
+          <p>Vytáhnu témata a myšlenky, které stojí za to ukázat. Může to být příběh, člověk, zajímavý detail, produkt, atmosféra, proces, myšlenka, humor nebo něco úplně obyčejného, co jen potřebuje správně uchopit.</p>
+          <p>Pak už pracuju já. Vymyslím koncept, připravím texty a naplánuju obsah. Společně doladíme detaily a podle potřeby se postarám i o natáčení, střih a zveřejnění.</p>
+
+          <p class="services__intro-tagline"><span class="accent">Zachytím okamžik.</span></p>
+          <p>Tak, aby ho prožil i ten, kdo u něj nebyl. Akce, sport, kultura, otevření nového místa nebo třeba křest knihy. Zachytím to podstatné a vytvořím krátké video, které předá atmosféru i těm, kteří u toho nebyli.</p>
+        </div>
+
+        <ul class="pill-grid">
+          <li class="pill pill--fill-blue">PPC reklamy</li>
+          <li class="pill pill--outline-navy">Správa sociálních sítí</li>
+          <li class="pill pill--fill-mustard">Kreativní koncepty</li>
+        </ul>
+      </div>
 
       <div class="services__video">
-        <video controls autoplay muted loop playsinline preload="auto">
+        <video autoplay muted loop playsinline disablepictureinpicture preload="auto">
           <source src="video/untitled-design.mp4" type="video/mp4">
         </video>
       </div>
@@ -88,7 +88,6 @@
         <blockquote class="quote">
           <p class="quote__text">„Na spolupráci se Simonou oceňujeme její kreativní přístup, profesionální zpracování videí a vysokou míru flexibility při dodržování termínů. Je spolehlivým partnerem, který dokáže citlivě pracovat s obsahem a přinášet kvalitní výsledky. Spolupráci můžeme jednoznačně doporučit.“</p>
           <button type="button" class="quote__toggle" hidden>Zobrazit více</button>
-          <cite class="quote__cite">Ing. Jiří Aujezdský, DiS.</cite>
         </blockquote>
       </article>
 
@@ -175,6 +174,7 @@
 
 <footer class="footer">
   <p>&copy; 2026 Simona Tran — Content Creator</p>
+  <p class="footer__credit">Web: <a href="mailto:brazdovajirina@gmail.com">Jiřina Brázdová</a></p>
 </footer>
 
 <script src="script.js"></script>
