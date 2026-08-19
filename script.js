@@ -20,3 +20,18 @@ const observer = new IntersectionObserver(
 );
 
 sections.forEach((section) => section && observer.observe(section));
+
+document.querySelectorAll(".quote").forEach((quote) => {
+  const text = quote.querySelector(".quote__text");
+  const toggle = quote.querySelector(".quote__toggle");
+  if (!text || !toggle) return;
+
+  if (text.scrollHeight - text.clientHeight > 1) {
+    toggle.hidden = false;
+  }
+
+  toggle.addEventListener("click", () => {
+    const expanded = text.classList.toggle("is-expanded");
+    toggle.textContent = expanded ? "Zobrazit méně" : "Zobrazit více";
+  });
+});
