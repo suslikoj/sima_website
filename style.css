@@ -152,32 +152,35 @@ a { color: inherit; text-decoration: none; }
   object-fit: cover;
 }
 
-.hero__flower {
+.hero__blob {
   position: absolute;
+  border-radius: 50%;
   z-index: 1;
-  width: auto;
-  filter: drop-shadow(0 12px 20px rgba(2, 37, 118, 0.15));
 }
 
-.hero__flower--yellow {
-  height: 220px;
-  top: -40px;
-  right: 16%;
-  transform: rotate(-8deg);
+.hero__blob--mustard {
+  width: 260px;
+  height: 260px;
+  background: var(--mustard);
+  top: -80px;
+  right: 18%;
+  opacity: 0.9;
 }
 
-.hero__flower--blue {
-  height: 150px;
-  bottom: -40px;
-  right: 2%;
-  transform: rotate(12deg);
+.hero__blob--blue {
+  width: 180px;
+  height: 180px;
+  background: var(--blue);
+  bottom: -60px;
+  right: 4%;
 }
 
-.hero__flower--pink {
-  height: 120px;
-  bottom: 12%;
-  left: -20px;
-  transform: rotate(-10deg);
+.hero__blob--pink {
+  width: 140px;
+  height: 140px;
+  background: var(--pink);
+  bottom: 10%;
+  left: -40px;
 }
 
 /* ---------- Nav ---------- */
@@ -262,33 +265,35 @@ a { color: inherit; text-decoration: none; }
   align-items: start;
 }
 
-.pill-grid {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.video-switch {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.85rem;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
 }
 
-.pill {
-  padding: 0.85rem 1.5rem;
+.video-switch__btn {
+  padding: 0.7rem 1.3rem;
   border-radius: 999px;
+  border: 2px solid var(--navy);
+  background: var(--cream);
+  color: var(--navy);
+  font-family: var(--font-body);
   font-weight: 600;
-  font-size: 0.95rem;
-  border: 2px solid transparent;
-  white-space: nowrap;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.pill--fill-mustard { background: var(--mustard); color: var(--navy); }
-.pill--fill-blue { background: var(--blue); color: var(--navy); }
-.pill--fill-pink { background: var(--pink); color: var(--navy); }
-.pill--fill-navy { background: var(--navy); color: var(--cream); }
+.video-switch__btn:hover {
+  background: var(--grey);
+}
 
-.pill--outline-navy { border-color: var(--navy); color: var(--navy); }
-.pill--outline-mustard { border-color: var(--mustard); color: var(--navy); background: var(--cream); }
-.pill--outline-pink { border-color: var(--pink); color: var(--navy); background: var(--cream); }
-.pill--outline-blue { border-color: var(--blue); color: var(--navy); background: var(--cream); }
+.video-switch__btn.is-active {
+  background: var(--navy);
+  color: var(--cream);
+  box-shadow: 0 6px 14px rgba(2, 37, 118, 0.3);
+}
 
 .services__video video {
   border-radius: 24px;

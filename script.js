@@ -35,3 +35,23 @@ document.querySelectorAll(".quote").forEach((quote) => {
     toggle.textContent = expanded ? "Zobrazit méně" : "Zobrazit více";
   });
 });
+
+const videoSwitchBtns = document.querySelectorAll(".video-switch__btn");
+const servicesVideo = document.querySelector(".services__video video");
+
+videoSwitchBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (btn.classList.contains("is-active")) return;
+
+    videoSwitchBtns.forEach((b) => b.classList.remove("is-active"));
+    btn.classList.add("is-active");
+
+    servicesVideo.querySelector("source").src = btn.dataset.video;
+    servicesVideo.load();
+    servicesVideo.addEventListener(
+      "canplay",
+      () => servicesVideo.play().catch(() => {}),
+      { once: true }
+    );
+  });
+});
