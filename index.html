@@ -13,9 +13,9 @@
 <body>
 
 <header class="hero" id="top">
-  <img class="hero__flower hero__flower--yellow" src="images/flowers/yellow.png" alt="" aria-hidden="true">
-  <img class="hero__flower hero__flower--blue" src="images/flowers/blue.png" alt="" aria-hidden="true">
-  <img class="hero__flower hero__flower--pink" src="images/flowers/pink.png" alt="" aria-hidden="true">
+  <div class="hero__blob hero__blob--mustard" aria-hidden="true"></div>
+  <div class="hero__blob hero__blob--blue" aria-hidden="true"></div>
+  <div class="hero__blob hero__blob--pink" aria-hidden="true"></div>
 
   <div class="hero__inner">
     <div class="hero__text">
@@ -54,17 +54,16 @@
           <p class="services__intro-tagline"><span class="accent">Zachytím okamžik.</span></p>
           <p>Tak, aby ho prožil i ten, kdo u něj nebyl. Akce, sport, kultura, otevření nového místa nebo třeba křest knihy. Zachytím to podstatné a vytvořím krátké video, které předá atmosféru i těm, kteří u toho nebyli.</p>
         </div>
-
-        <ul class="pill-grid">
-          <li class="pill pill--fill-blue">PPC reklamy</li>
-          <li class="pill pill--outline-navy">Správa sociálních sítí</li>
-          <li class="pill pill--fill-mustard">Kreativní koncepty</li>
-        </ul>
       </div>
 
       <div class="services__video">
+        <div class="video-switch">
+          <button type="button" class="video-switch__btn is-active" data-video="video/kreativni.mp4">Kreativní koncepty</button>
+          <button type="button" class="video-switch__btn" data-video="video/ppc.mp4">PPC reklamy</button>
+          <button type="button" class="video-switch__btn" data-video="video/socky.mp4">Správa sociálních sítí</button>
+        </div>
         <video autoplay muted loop playsinline disablepictureinpicture preload="auto">
-          <source src="video/untitled-design.mp4" type="video/mp4">
+          <source src="video/kreativni.mp4" type="video/mp4">
         </video>
       </div>
     </div>
