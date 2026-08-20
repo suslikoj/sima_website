@@ -297,7 +297,7 @@ a { color: inherit; text-decoration: none; }
 
 .services__video video {
   border-radius: 24px;
-  width: 100%;
+  width: 90%;
   box-shadow: 0 24px 48px rgba(2, 37, 118, 0.28);
   pointer-events: none;
 }
